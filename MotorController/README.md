@@ -1,63 +1,52 @@
 # A pwd motor controller
 
 # MotorController class
-// Sets the pwd pin used by the controller.
 
-void setPin(int pin);
+## void setPin(int pin);
+Sets the pwd pin used by the controller.
                                                                
-// Returns the current pwd pin.
+## int getPin();
+Returns the current pwd pin.
 
-int getPin();
+## void setPower(double power);
+Sets the percent power output.
 
-// Sets the percent power output.
-
-// -1.0 to 1.0
-
-void setPower(double power);
+-1.0 to 1.0
                                                                
-// Gets the percent power the motor is set to.
+## double getPower();
+Gets the percent power the motor is set to.
 
-// -1.0 to 1.0
-
-double getPower();
+-1.0 to 1.0
                                                                
-// Sets power to 0.0
-
-void stop();
+## void stop();
+Sets power to 0.0
                                                                
-// The motor may not be perfect so there are dead zones.
+## void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
+The motor may not be perfect so there are dead zones.
 
-// By default motorMinDeadZone is 0 and motorMaxDeadZone is 180
-
-void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
+By default motorMinDeadZone is 0 and motorMaxDeadZone is 180
 
 # Example code
 
-\#include "MotorController.h"
+```
+#include "MotorController.h"
 
-// Controlls a motor with the motor controller library and a pot.
-
-\#define POT_PIN A5
+// Controlls a motor with my motor controller library and a pot.
+#define POT_PIN A5
 
 MotorController spx;
 
 void setup() {
-
   spx.setPin(9);
-
   Serial.begin(9600);
-
 }
 
 void loop() {
-
   int input_value = analogRead(POT_PIN);
-
   double power = (input_value / 336.5) - 1;
-
   Serial.println(power);
 
   spx.setPower(power);
-
   delay(15);
 }
+```
