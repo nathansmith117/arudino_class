@@ -1,4 +1,4 @@
-# A pwd motor controller
+# A pwm motor controller
 
 # Installing
 Place "MotorController.cpp" and "MotorController.h" in your project folder.
@@ -6,10 +6,10 @@ Place "MotorController.cpp" and "MotorController.h" in your project folder.
 # MotorController class
 
 #### void setPin(int pin);
-Sets the pwd pin used by the controller.
+Sets the pwm pin used by the controller.
                                                                
 #### int getPin();
-Returns the current pwd pin.
+Returns the current pwm pin.
 
 #### void setPower(double power);
 Sets the percent power output.

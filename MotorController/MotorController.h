@@ -1,5 +1,5 @@
 /*
- * A pwd motor controller.
+ * A pwm motor controller.
  * Been tested with victorspx and talonsrx and might work with others (---:
 */
 
@@ -11,10 +11,10 @@
 class MotorController {
   public:
 
-  // Sets the pwd pin used by the controller.
+  // Sets the pwm pin used by the controller.
   void setPin(int pin);
 
-  // Returns the current pwd pin.
+  // Returns the current pwm pin.
   int getPin();
   
   // Sets the percent power output.
