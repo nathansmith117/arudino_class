@@ -2,26 +2,26 @@
 
 # MotorController class
 
-## void setPin(int pin);
+#### void setPin(int pin);
 Sets the pwd pin used by the controller.
                                                                
-## int getPin();
+#### int getPin();
 Returns the current pwd pin.
 
-## void setPower(double power);
+#### void setPower(double power);
 Sets the percent power output.
 
 -1.0 to 1.0
                                                                
-## double getPower();
+#### double getPower();
 Gets the percent power the motor is set to.
 
 -1.0 to 1.0
                                                                
-## void stop();
+#### void stop();
 Sets power to 0.0
                                                                
-## void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
+#### void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
 The motor may not be perfect so there are dead zones.
 
 By default motorMinDeadZone is 0 and motorMaxDeadZone is 180
