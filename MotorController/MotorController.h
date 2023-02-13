@@ -1,3 +1,8 @@
+/*
+ * A pwd motor controller.
+ * Been tested with victorspx and talonsrx and might work with others (---:
+*/
+
 #include <Servo.h>
 
 #ifndef _MOTORCONTROLLER_H
@@ -5,14 +10,26 @@
 
 class MotorController {
   public:
+
+  // Sets the pwd pin used by the controller.
   void setPin(int pin);
+
+  // Returns the current pwd pin.
   int getPin();
   
-  // 1 to -1
+  // Sets the percent power output.
+  // -1.0 to 1.0
   void setPower(double power);
+
+  // Gets the percent power the motor is set to.
+  // -1.0 to 1.0
   double getPower();
 
+  // Sets power to 0.0
   void stop();
+
+  // The motor may not be perfect so there are dead zones.
+  // By default motorMinDeadZone is 0 and motorMaxDeadZone is 180.
   void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
 
   private:
@@ -20,10 +37,10 @@ class MotorController {
   double power = 0.0;
   Servo motor;
 
-  // The motor may not be perfect so there are dead zones.
-  int motorMinDeadZone = 6;
+  int motorMinDeadZone = 0;
   int motorMaxDeadZone = 180;
   
+  // Converts percerent power to angle.
   // 180 = full forward, 90 = not moving, 0 to full backwards.
   int percentPowerToAngle(double power);
 };
