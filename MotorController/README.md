@@ -1,5 +1,8 @@
 # A pwd motor controller
 
+# Installing
+Place "MotorController.cpp" and "MotorController.h" in your project folder.
+
 # MotorController class
 
 #### void setPin(int pin);
