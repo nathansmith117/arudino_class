@@ -37,10 +37,11 @@ By default motorMinDeadZone is 0 and motorMaxDeadZone is 180
 // Controlls a motor with my motor controller library and a pot.
 #define POT_PIN A5
 
-MotorController spx;
+const int motor_pin = 9;
+MotorController motor;
 
 void setup() {
-  spx.setPin(9);
+  motor.setPin(motor_pin);
   Serial.begin(9600);
 }
 
@@ -49,7 +50,7 @@ void loop() {
   double power = (input_value / 336.5) - 1;
   Serial.println(power);
 
-  spx.setPower(power);
+  motor.setPower(power);
   delay(15);
 }
 ```
