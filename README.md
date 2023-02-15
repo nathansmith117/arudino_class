@@ -6,6 +6,9 @@ https://docs.arduino.cc/
 # Tutorial
 https://www.tutorialspoint.com/arduino/index.htm
 
+# IR Sensor
+https://circuitdigest.com/microcontroller-projects/interfacing-ir-sensor-module-with-arduino#:~:text=Arduino%20IR%20Sensor%20Interfacing,can%20only%20measure%20infrared%20radiation.
+
 # Tof Laser 
 https://learn.adafruit.com/adafruit-vl53l0x-micro-lidar-distance-sensor-breakout/arduino-code
 
