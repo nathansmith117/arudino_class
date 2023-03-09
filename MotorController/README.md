@@ -3,6 +3,17 @@
 # Installing
 Place "MotorController.cpp" and "MotorController.h" in your project folder.
 
+# Motor controllers you might use.
+
+## TalonSRX docs
+https://docs.google.com/gview?url=https://link.vex.com/vexpro/pdf/217-8080-Talon-SRX-Users-Guide&embedded=true
+
+## VictorSPX docs
+https://content.vexrobotics.com/vexpro/pdf/VictorSPX-UserGuide-20190117.pdf
+
+## More motor controller stuff
+https://content.vexrobotics.com/vexpro/pdf/VictorSPX-InfoSheet-20171129.pdf
+
 # MotorController class
 
 #### void setPin(int pin);

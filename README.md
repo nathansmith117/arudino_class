@@ -20,8 +20,7 @@ https://lastminuteengineers.com/nrf24l01-arduino-wireless-communication/
 # Ultrasonic
 https://www.tutorialspoint.com/arduino/arduino_ultrasonic_sensor.htm
 
-# Librarys
-#### Motor controller
+# Motor controller stuff
 https://github.com/nathansmithsmith/arudino_class/tree/main/MotorController
 
 # Examples
