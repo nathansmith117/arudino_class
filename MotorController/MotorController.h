@@ -28,10 +28,6 @@ class MotorController {
   // Sets power to 0.0
   void stop();
 
-  // The motor may not be perfect so there are dead zones.
-  // By default motorMinDeadZone is 0 and motorMaxDeadZone is 180.
-  void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
-
   private:
   int pin;
   double power = 0.0;

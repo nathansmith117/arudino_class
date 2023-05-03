@@ -35,7 +35,7 @@ Gets the percent power the motor is set to.
 #### void stop();
 Sets power to 0.0
                                                                
-#### void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone);
+#### void setDeadZones(int motorMinDeadZone, int motorMaxDeadZone); // Been removed
 The motor may not be perfect so there are dead zones.
 
 By default motorMinDeadZone is 0 and motorMaxDeadZone is 180
